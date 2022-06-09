@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import br.com.empresa.entity.AlunoDisciplina;
 import br.com.empresa.entity.Avaliacao;
 import br.com.empresa.repository.AvaliacaoRepo;
 
@@ -20,6 +21,10 @@ public class AvaliacaoService {
 	
 	public List<Avaliacao> findAll() {
 		return repo.findAll();
+	}
+	
+	public Avaliacao buscarNotaAlunoDisciplina(AlunoDisciplina alunoDisciplina) {
+		return repo.findByAlunoDisciplina(alunoDisciplina);
 	}
 	
 }

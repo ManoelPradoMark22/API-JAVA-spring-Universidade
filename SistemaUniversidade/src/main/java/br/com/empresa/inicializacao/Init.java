@@ -128,6 +128,11 @@ public class Init implements ApplicationListener<ContextRefreshedEvent>{
 		avaliacaoAluno3.setConceito("A");
 		avaliacaoService.save(avaliacaoAluno3);
 		
+		Avaliacao avaliacao = avaliacaoService.buscarNotaAlunoDisciplina(alunoDisciplina1);
+		System.out.println("Aluno: " + avaliacao.getAlunoDisciplina().getAluno().getNome());
+		System.out.println("Disciplina: " + avaliacao.getAlunoDisciplina().getDisciplina().getNome());
+		System.out.println("Avaliação: " + avaliacao.getConceito());
+		
 	}
 	
 }

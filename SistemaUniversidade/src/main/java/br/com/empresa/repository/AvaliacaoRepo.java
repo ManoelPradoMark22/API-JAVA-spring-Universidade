@@ -8,5 +8,7 @@ import br.com.empresa.entity.Avaliacao;
 
 @Repository
 public interface AvaliacaoRepo extends JpaRepository<Avaliacao, AlunoDisciplina> {
-
+	
+	Avaliacao findByAlunoDisciplina(AlunoDisciplina alunoDisciplina);
+	
 }
