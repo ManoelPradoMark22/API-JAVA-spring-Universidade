@@ -82,6 +82,11 @@ public class Init implements ApplicationListener<ContextRefreshedEvent>{
 		aluno3.setTurma(turma1);
 		aluno4.setTurma(turma2);
 		
+		aluno1.setDisciplinas(Arrays.asList(disciplina1, disciplina2, disciplina3));
+		aluno2.setDisciplinas(Arrays.asList(disciplina1, disciplina3));
+		aluno3.setDisciplinas(Arrays.asList(disciplina4, disciplina5));
+		aluno4.setDisciplinas(Arrays.asList(disciplina5));
+		
 		alunoRepo.saveAll(Arrays.asList(aluno1, aluno2, aluno3, aluno4));
 		
 		
