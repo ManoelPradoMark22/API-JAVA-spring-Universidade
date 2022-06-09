@@ -40,6 +40,7 @@ public class AlunoService {
 			Aluno aluno = buscaPorId(objAluno.getId());
 			aluno.setNome(objAluno.getNome());
 			aluno.setTurma(objAluno.getTurma());
+			aluno.setDisciplinas(objAluno.getDisciplinas());
 			return salvar(aluno); 
 			//se ja existir o aluno, ele altera. se nao existe, ele cria.
 		}
