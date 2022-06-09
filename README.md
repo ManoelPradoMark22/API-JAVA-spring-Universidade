@@ -9,4 +9,4 @@ Baixe o <b><a href="https://github.com/ManoelPradoMark22/API-JAVA-spring-Univers
 
 ![modelo](./modelo.png)
 ![entidades](./entidades.png)
-![postman print](./postman print.png)
+![postmanPrint](./postman print.png)
