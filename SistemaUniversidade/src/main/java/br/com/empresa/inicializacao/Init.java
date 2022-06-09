@@ -8,8 +8,10 @@ import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
 
 import br.com.empresa.entity.Aluno;
+import br.com.empresa.entity.Disciplina;
 import br.com.empresa.entity.Turma;
 import br.com.empresa.repository.AlunoRepo;
+import br.com.empresa.service.DisciplinaService;
 import br.com.empresa.service.TurmaService;
 
 @Component
@@ -17,6 +19,9 @@ public class Init implements ApplicationListener<ContextRefreshedEvent>{
 	
 	@Autowired
 	TurmaService turmaService;
+	
+	@Autowired
+	DisciplinaService disciplinaService;
 	
 	@Autowired
 	AlunoRepo alunoRepo;
@@ -36,20 +41,46 @@ public class Init implements ApplicationListener<ContextRefreshedEvent>{
 		aluno4.setNome("Pedro");
 		
 		
-		Turma turmaJava = new Turma();
-		turmaJava.setNome("Java");
+		Disciplina disciplina1 = new Disciplina();
+		disciplina1.setNome("Java");
 		
-		turmaService.salvar(turmaJava);
+		disciplinaService.salvar(disciplina1);
 		
-		Turma turmaAWS = new Turma();
-		turmaAWS.setNome("AWS");
+		Disciplina disciplina2 = new Disciplina();
+		disciplina2.setNome("JavaScript");
 		
-		turmaService.salvar(turmaAWS);
+		disciplinaService.salvar(disciplina2);
 		
-		aluno1.setTurma(turmaJava);
-		aluno2.setTurma(turmaAWS);
-		aluno3.setTurma(turmaJava);
-		aluno4.setTurma(turmaAWS);
+		Disciplina disciplina3 = new Disciplina();
+		disciplina3.setNome("NodeJs");
+		
+		disciplinaService.salvar(disciplina3);
+		
+		Disciplina disciplina4 = new Disciplina();
+		disciplina4.setNome("Amazon EC2");
+		
+		disciplinaService.salvar(disciplina4);
+		
+		Disciplina disciplina5 = new Disciplina();
+		disciplina5.setNome("Amazon S3");
+		
+		disciplinaService.salvar(disciplina5);
+		
+		
+		Turma turma1 = new Turma();
+		turma1.setNome("Backend");
+		
+		turmaService.salvar(turma1);
+		
+		Turma turma2 = new Turma();
+		turma2.setNome("AWS");
+		
+		turmaService.salvar(turma2);
+		
+		aluno1.setTurma(turma1);
+		aluno2.setTurma(turma2);
+		aluno3.setTurma(turma1);
+		aluno4.setTurma(turma2);
 		
 		alunoRepo.saveAll(Arrays.asList(aluno1, aluno2, aluno3, aluno4));
 		
