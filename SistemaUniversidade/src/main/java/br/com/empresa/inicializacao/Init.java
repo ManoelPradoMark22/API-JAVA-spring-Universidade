@@ -117,6 +117,17 @@ public class Init implements ApplicationListener<ContextRefreshedEvent>{
 		avaliacaoAluno2.setConceito("C");
 		avaliacaoService.save(avaliacaoAluno2);
 		
+		
+		Avaliacao avaliacaoAluno3 = new Avaliacao();
+		
+		AlunoDisciplina alunoDisciplina3 = new AlunoDisciplina();
+		alunoDisciplina3.setAluno(aluno3);
+		alunoDisciplina3.setDisciplina(disciplina1);
+		
+		avaliacaoAluno3.setAlunoDisciplina(alunoDisciplina3);
+		avaliacaoAluno3.setConceito("A");
+		avaliacaoService.save(avaliacaoAluno3);
+		
 	}
 	
 }
