@@ -1,0 +1,360 @@
+{
+	"info": {
+		"_postman_id": "4393cea8-7228-4e43-84df-88f1e953135d",
+		"name": "Universidade",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21350775"
+	},
+	"item": [
+		{
+			"name": "Listar Alunos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"id\": 1,\r\n    \"nome\": \"Manoel Prado\",\r\n    \"turma\": {\r\n        \"id\": 2,\r\n        \"nome\": \"AWS\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/aluno",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"aluno"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pesquisar Aluno por ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"id\": 1,\r\n    \"nome\": \"Manoel Prado\",\r\n    \"turma\": {\r\n        \"id\": 2,\r\n        \"nome\": \"AWS\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/aluno",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"aluno"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Turmas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"id\": 1,\r\n    \"nome\": \"Manoel Prado\",\r\n    \"turma\": {\r\n        \"id\": 2,\r\n        \"nome\": \"AWS\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/turma",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"turma"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pesquisar Turma por ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"id\": 1,\r\n    \"nome\": \"Manoel Prado\",\r\n    \"turma\": {\r\n        \"id\": 2,\r\n        \"nome\": \"AWS\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/turma/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"turma",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Disciplinas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"id\": 1,\r\n    \"nome\": \"Manoel Prado\",\r\n    \"turma\": {\r\n        \"id\": 2,\r\n        \"nome\": \"AWS\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/disciplina",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disciplina"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Avaliações",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"id\": 1,\r\n    \"nome\": \"Manoel Prado\",\r\n    \"turma\": {\r\n        \"id\": 2,\r\n        \"nome\": \"AWS\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/disciplina",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disciplina"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pesquisar Avaliação",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/avaliacao/1/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"avaliacao",
+						"1",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar aluno",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"id\": 1,\r\n    \"nome\": \"Manoel Prado\",\r\n    \"turma\": {\r\n        \"id\": 2,\r\n        \"nome\": \"AWS\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/aluno/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"aluno",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Aluno",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"id\": 1,\r\n    \"nome\": \"Manoel Prado\",\r\n    \"turma\": {\r\n        \"id\": 2,\r\n        \"nome\": \"AWS\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/aluno",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"aluno"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Avaliação",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"alunoDisciplina\": {\r\n        \"aluno\": {\r\n            \"id\": 1\r\n        },\r\n        \"disciplina\": {\r\n            \"id\": 2\r\n        }\r\n    },\r\n    \"conceito\": \"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/avaliacao",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"avaliacao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Turma",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"nome\": \"AWS\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/turma",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"turma"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Aluno",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/aluno/7",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"aluno",
+						"7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
